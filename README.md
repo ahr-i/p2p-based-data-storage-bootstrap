@@ -23,7 +23,7 @@ docker network create --subnet 200.0.0.0/16 p2p
 
 ### 1.4 Run
 ```
-docker run -d --name dds_bootstrap --network p2p 200.0.0.20 -p 3000:3000 dds/bootstrap
+docker run -d --name dds_bootstrap --network p2p --ip 200.0.0.20 -p 3000:3000 dds/bootstrap
 ```
 It's better to set a static IP.   
    
